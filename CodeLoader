@@ -1,0 +1,19 @@
+--Por rudha33/rudhaFSI
+--RScrpit Backdoor Scanner v1
+--Se todos os players pularem, o jogo tem backdoor, aperte execute para começar
+--Após isso. Aperte em Adquirir.
+
+
+
+
+
+
+
+
+
+
+for i,v in pairs(game:GetService('Players'):GetPlayers()) do 
+  if v.Character ~= nil and v.Character:IsA("Model") and v.Character:FindFirstChildWhichIsA("Humanoid") then 
+    v.Character:FindFirstChildWhichIsA("Humanoid").Jump = true 
+  end
+end
